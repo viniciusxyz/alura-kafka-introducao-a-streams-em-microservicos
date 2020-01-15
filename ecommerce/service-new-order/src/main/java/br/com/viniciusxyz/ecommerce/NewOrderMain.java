@@ -24,8 +24,11 @@ public class NewOrderMain {
 
 
         String email = "teste de e-mail";
-        dispatcherOrder.send("ECOMMERCE_NEW_ORDER", userId, order, new NewOrderMain()::callbackGenerico).get();
-        dispatcherEmail.send("ECOMMERCE_SEND_EMAIL", userId, email, new NewOrderMain()::callbackGenerico).get();
+
+
+            dispatcherOrder.send("ECOMMERCE_NEW_ORDER", userId, order, new NewOrderMain()::callbackGenerico).get();
+            dispatcherEmail.send("ECOMMERCE_SEND_EMAIL", userId, email, new NewOrderMain()::callbackGenerico).get();
+
 
 
     }

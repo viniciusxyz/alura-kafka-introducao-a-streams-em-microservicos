@@ -9,9 +9,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="service-new-order" />
         <module name="service-email" />
-        <module name="service-log" />
         <module name="common-kafka" />
         <module name="service-fraude-detector" />
+        <module name="service-log" />
       </profile>
     </annotationProcessing>
   </component>
